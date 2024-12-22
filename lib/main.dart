@@ -80,11 +80,11 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 
-Widget buildFriendsList(List<Map<String, dynamic>> fetchFriends) {
+Widget buildFriendsList(List<Map<String, dynamic>> getFriends) {
   return ListView.builder(
-      itemCount: fetchFriends.length,
+      itemCount: getFriends.length,
       itemBuilder: (context, index) {
-        final player = fetchFriends[index];
+        final player = getFriends[index];
         return ListTile(
           leading: Container(
             width: 75,
